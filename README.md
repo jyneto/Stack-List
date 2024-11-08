@@ -1,6 +1,6 @@
 #Stack and List Generic Collection
 
-Assignment that involves creating and managing a collection of Employee objects using two common generic types in C#: Stack and List. 
+<p>Assignment that involves creating and managing a collection of Employee objects using two common generic types in C#: Stack and List. 
 
 The task is divided into two parts:
 
@@ -46,7 +46,7 @@ Create a List.
 
 Add five objects of the Employee class to your list.
 
-Create a condition using the Contains() method to check if a specific object exists in the list. If it does, print "Employee2 object exists in the list" in the console. Otherwise, print "Employee2 object does not exist in the list".
+Create a condition using the Contains() method to check if a specific object exists in the list. If it does, print "Employee2 object exists in the list" in the console. Otherwise, print "Employee2 object does not exist in the list". </p>
 
 Then use the Find() method to find and print the first object in the list that has Gender = "Male".
 
