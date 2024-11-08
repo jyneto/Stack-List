@@ -9,12 +9,12 @@ using System.Xml.Linq;
 
 namespace Stack_List
 {
-    internal class StackManager
+    internal class Stack_ListHandler
     {
-        public void Run()
+        public void RunProgram()
         {
-            Console.WriteLine("--Part 1 --- ");
-           //Creating new objects to Employee class
+            Console.WriteLine("--Part 1 Stack--- ");
+            //Creating new objects to Employee class
             Employee employee1 = new Employee(01, "Joanne", "Female", 50000);
             Employee employee2 = new Employee(02, "Axel", "Male", 46000);
             Employee employee3 = new Employee(03, "Charlie", "Non-Binary", 5000);
@@ -23,7 +23,7 @@ namespace Stack_List
 
             //Creating a stack to hold Employee objects
             Stack<Employee> employeeStack = new Stack<Employee>();
-           
+
 
             //Pushing to add objects to stack
             employeeStack.Push(employee1);
@@ -40,8 +40,10 @@ namespace Stack_List
                 DisplayObjectsInStack(employeeStack.Count);
             }
             Console.WriteLine("-------------------------------------------------");
-            Console.WriteLine("Using Pop method to retrieve");
 
+            Console.WriteLine("\nUsing Pop method to retrieve");
+
+          //Using Pop method to retrieve and display employee infromation until stack is empty
             while (employeeStack.Count > 0)
             {
 
@@ -58,8 +60,9 @@ namespace Stack_List
 
             Console.WriteLine("-------------------------------------------------");
 
-            Console.WriteLine("Using Peek method to retrieve");
-            
+            Console.WriteLine("\nUsing Peek method to retrieve");
+
+            //Using Peek method to retrieve and display the top object in the stack
             for (int i = 0; i < 2; i++)
             {
                 //Peeking at the top object in stack and show info
@@ -69,6 +72,43 @@ namespace Stack_List
             }
 
             Console.WriteLine("-------------------------------------------------");
+
+            Console.WriteLine("--Part 2 List--");
+            Console.WriteLine("");
+            
+            //Creating a list to hold Employee objects
+            List<Employee> employeeList = new List<Employee>();
+
+            employeeList.Add(employee1);
+            employeeList.Add(employee2);
+            employeeList.Add(employee3);
+            employeeList.Add(employee4);
+            employeeList.Add(employee5);
+
+            //Using Contain method as instructed
+            //Checking if employee2 exist in the list 
+            if (employeeList.Contains(employee2))
+            {
+                Console.WriteLine("Employee2 exist in the list");
+            }
+            else
+            {
+                Console.WriteLine("Employee2 doesn´t exist in the list");
+            }
+            Console.WriteLine();
+
+            // Finding first male employee, using Find method
+            Employee firstMaleObject = employeeList.Find((employee) => employee.Gender == "Male");
+            //Printing object in new list with employee information
+            DisplayEmployeeInfo(firstMaleObject); 
+            Console.WriteLine();
+
+            //Finding all make employees , using FindAll method
+            List<Employee> maleList = employeeList.FindAll((employee) => employee.Gender == "Male");
+            foreach (Employee maleEmployees in maleList)
+            {
+                DisplayEmployeeInfo(maleEmployees);
+            }
 
         }
         public void DisplayEmployeeInfo(Employee employee)
