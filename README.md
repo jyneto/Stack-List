@@ -1,10 +1,10 @@
-#Stack and List Generic Collection
+<h1>Stack and List Generic Collection </h1>
 
 <p>Assignment that involves creating and managing a collection of Employee objects using two common generic types in C#: Stack and List. 
 
 The task is divided into two parts:
 
-Part 1 – Stack
+<h3>Part 1 – Stack</h3>
 Create a Class:
 
 Define a class named Employee with properties: Id, Name, Gender, and Salary.
@@ -40,7 +40,7 @@ Check for Specific Object:
 Check if the third Employee exists in the stack and print the result.
 
 
-Part 2 – List
+<h3>Part 2 – List</h3>
 
 Create a List.
 
