@@ -5,17 +5,17 @@
 The task is divided into two parts:
 
 <h3>Part 1 – Stack</h3>
-Create a Class:
+<h5>Create a Class:</h5>
 
 Define a class named Employee with properties: Id, Name, Gender, and Salary.
 
-Create Stack with Objects:
+<h5>Create Stack with Objects: </h5>
 
 In the Main() method, create five Employee objects with different Ids, Names, Genders, and Salaries.
 
 Add these objects to a Stack using the Push() method.
 
-Print All Objects:
+<h5>Print All Objects:</h5>
 
 Use a foreach loop to print each Employee in the stack.
 
@@ -42,7 +42,7 @@ Check if the third Employee exists in the stack and print the result.
 
 <h3>Part 2 – List</h3>
 
-Create a List.
+<h5>Create a List</h5>
 
 Add five objects of the Employee class to your list.
 
