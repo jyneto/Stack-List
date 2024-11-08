@@ -39,12 +39,13 @@ Check if the third Employee exists in the stack and print the result.
 
 
 Part 2 – List
-[ ] Create a List.
 
-[ ] Add five objects of the Employee class to your list.
+Create a List.
 
-[ ] Create a condition using the Contains() method to check if a specific object exists in the list. If it does, print "Employee2 object exists in the list" in the console. Otherwise, print "Employee2 object does not exist in the list".
+Add five objects of the Employee class to your list.
 
-[ ] Then use the Find() method to find and print the first object in the list that has Gender = "Male".
+Create a condition using the Contains() method to check if a specific object exists in the list. If it does, print "Employee2 object exists in the list" in the console. Otherwise, print "Employee2 object does not exist in the list".
 
-[ ] Then use the FindAll() method to find and print all objects in the list that have Gender = "Male".
+Then use the Find() method to find and print the first object in the list that has Gender = "Male".
+
+Then use the FindAll() method to find and print all objects in the list that have Gender = "Male".
