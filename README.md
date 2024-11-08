@@ -1,3 +1,5 @@
+#Stack and List Generic Collection
+
 Assignment that involves creating and managing a collection of Employee objects using two common generic types in C#: Stack and List. 
 
 The task is divided into two parts:
